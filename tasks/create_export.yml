@@ -1,0 +1,17 @@
+---
+- name: Create Export Policy Rule
+  na_ontap_export_policy_rule:
+    state: present
+    name:  "{{ export_policy_name }}"
+    vserver: "{{ vserver_name }}"
+    client_match: "{{ export_policy_rule_client }}"
+    rw_rule: any
+    ro_rule: none
+    protocol: nfs,nfs3,nfs4
+    super_user_security: any
+    allow_suid: true
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: yes
+    validate_certs: false

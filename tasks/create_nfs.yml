@@ -1,0 +1,17 @@
+---
+- name: Change NFS Status
+  na_ontap_nfs:
+    state: present
+    service_state: started
+    vserver: "{{ vserver_name }}"
+    nfsv3: enabled
+    nfsv4: enabled
+    nfsv41: enabled
+    tcp: enabled
+    udp: enabled
+    vstorage_state: disabled
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: true
+    validate_certs: false
