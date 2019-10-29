@@ -1,6 +1,6 @@
 galaxy_info:
   author: Markus Kraus
-  description: This Role runs the unattended setup / update of Veeam Backup & Replication and Veeam ONE
+  description: This Role creates End-to-End a new NetApp NFS Export.
   company: mycloudrevolution.com
   license: GPL-3.0-only
   min_ansible_version: 2.8
