@@ -14,3 +14,5 @@
   when: create_export | bool
 - include_tasks: create_vol.yml
   when: create_vol | bool
+- include_tasks: verify_export.yml
+  when: verify_export | bool

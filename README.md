@@ -9,6 +9,7 @@ Creates End-to-End a new NFS Export:
 * Interface
 * Export Policy 
 * Volume
+* Verify
 
 Requirements
 ------------
@@ -26,6 +27,7 @@ create_interface: true
 create_vol: true
 create_nfs: true
 create_export: true
+verify_export: false
 
 aggr_name: aggr_data002
 broadcast_name: data_domain
@@ -41,6 +43,7 @@ vol_size: 1024
 vol_size_unit: mb
 export_policy_name: data002
 export_policy_rule_client: 10.0.2.0/24
+mount_directory: /mnt/verify
 ```
 
 Dependencies
@@ -63,6 +66,7 @@ Example Playbook
     create_vol: true
     create_nfs: true
     create_export: true
+    verify_export: true
     netapp_hostname: 10.0.2.11
     netapp_username: admin
     netapp_password: Passw0rd!
