@@ -1,6 +1,6 @@
 ---
 - name: Modify Default Broadcast Domain
-  na_ontap_broadcast_domain:
+  netapp.ontap.na_ontap_broadcast_domain:
     state: present
     name: Default
     mtu: 1500
@@ -12,7 +12,7 @@
     https: true
     validate_certs: false
 - name: Create Broadcast Domain
-  na_ontap_broadcast_domain:
+  netapp.ontap.na_ontap_broadcast_domain:
     state: present
     name: "{{ broadcast_name }}"
     mtu: 1500

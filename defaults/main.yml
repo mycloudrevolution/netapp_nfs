@@ -1,5 +1,6 @@
 ---
 # defaults file for netapp_nfs
+## role tasks
 create_aggr: true
 create_svm: true
 create_broadcast: true
@@ -9,6 +10,7 @@ create_nfs: true
 create_export: true
 verify_export: false
 
+## role vars
 aggr_name: aggr_data002
 broadcast_name: data_domain
 broadcast_ports: ["netapp-01:e0a", "netapp-01:e0b"]

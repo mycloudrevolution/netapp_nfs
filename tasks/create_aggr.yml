@@ -1,6 +1,6 @@
 ---
 - name: Create Aggregate
-  na_ontap_aggregate:
+  netapp.ontap.na_ontap_aggregate:
     state: present
     service_state: online
     name: "{{ aggr_name }}"

@@ -1,6 +1,6 @@
 ---
 - name: Create NFS Interface
-  na_ontap_interface:
+  netapp.ontap.na_ontap_interface:
     state: present
     interface_name: "if_{{ vserver_name }}"
     home_port: "{{ if_home_port }}"
