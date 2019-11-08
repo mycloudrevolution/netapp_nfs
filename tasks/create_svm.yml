@@ -1,6 +1,6 @@
 ---
 - name: Create SVM
-  na_ontap_svm:
+  netapp.ontap.na_ontap_svm:
     state: present
     name: "{{ vserver_name }}"
     root_volume: "vol0_{{ vserver_name }}"

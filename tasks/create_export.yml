@@ -1,6 +1,6 @@
 ---
 - name: Modify default Export Policy Rule
-  na_ontap_export_policy_rule: 
+  netapp.ontap.na_ontap_export_policy_rule: 
     state: present 
     policy_name: default
     vserver: "{{ vserver_name }}" 
@@ -14,7 +14,7 @@
     https: yes
     validate_certs: false
 - name: Create New Export Policy Rule
-  na_ontap_export_policy_rule:
+  netapp.ontap.na_ontap_export_policy_rule:
     state: present
     name:  "{{ export_policy_name }}"
     vserver: "{{ vserver_name }}"

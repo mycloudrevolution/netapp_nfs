@@ -49,7 +49,11 @@ mount_directory: /mnt/verify
 Dependencies
 ------------
 
-none
+Collections: netapp.ontap
+
+```
+ansible-galaxy collection install netapp.ontap
+```
 
 Example Playbook
 ----------------
@@ -66,7 +70,7 @@ Example Playbook
     create_vol: true
     create_nfs: true
     create_export: true
-    verify_export: true
+    verify_export: false
     netapp_hostname: 10.0.2.11
     netapp_username: admin
     netapp_password: Passw0rd!

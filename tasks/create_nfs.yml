@@ -1,6 +1,6 @@
 ---
 - name: Change NFS Status
-  na_ontap_nfs:
+  netapp.ontap.na_ontap_nfs:
     state: present
     service_state: started
     vserver: "{{ vserver_name }}"
