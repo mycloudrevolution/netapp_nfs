@@ -13,5 +13,3 @@
   mount: 
     state: absent 
     path: "{{ mount_directory }}"
-    src: "{{ if_address }}:/{{ vol_name }}" 
-    fstype: nfs
