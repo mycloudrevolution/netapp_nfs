@@ -6,7 +6,7 @@
     vserver: "{{ vserver_name }}"
     nfsv3: enabled
     nfsv4: enabled
-    nfsv41: enabled
+    nfsv41: disabled
     tcp: enabled
     udp: enabled
     vstorage_state: disabled
