@@ -6,10 +6,14 @@
     vserver: "{{ vserver_name }}"
     nfsv3: enabled
     nfsv4: enabled
+    nfsv40_acl: enabled
+    nfsv40_read_delegation: enabled
+    nfsv40_write_delegation: enabled
     nfsv41: disabled
     tcp: enabled
     udp: enabled
     vstorage_state: disabled
+    showmount: enabled
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
     password: "{{ netapp_password }}"
