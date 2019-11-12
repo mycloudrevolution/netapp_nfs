@@ -8,11 +8,16 @@
     nfsv4: enabled
     nfsv40_acl: enabled
     nfsv40_read_delegation: enabled
+    nfsv40_referrals: enabled
     nfsv40_write_delegation: enabled
-    nfsv41: disabled
+    nfsv41: enabled
+    nfsv41_acl: enabled
+    nfsv41_read_delegation: enabled
+    #nfsv41_referrals: enabled
+    nfsv41_write_delegation: enabled
     tcp: enabled
     udp: enabled
-    vstorage_state: disabled
+    vstorage_state: enabled
     showmount: enabled
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"

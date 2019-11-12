@@ -8,6 +8,7 @@
     state: mounted 
     path: "{{ mount_directory }}"
     src: "{{ if_address }}:/{{ vol_name }}" 
+    opts: "sec=sys"
     fstype: nfs
 - name: Unmount NFS export 
   mount: 
